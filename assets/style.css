@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500;700&display=swap");
+:root {
+  --canela: #e2c8bf;
+  --marron: #6c433c;
+  --shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.material-icons-outlined {
+  background-color: var(--canela);
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 40px;
+  height: 44px;
+  width: 44px;
+  text-align: center;
+  color: var(--marron);
+  box-shadow: var(--shadow);
+  border-radius: 16px;
+  line-height: 44px;
+  cursor: pointer;
+}
+body {
+  height: 100vh;
+}
+header {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100vw;
+  height: 8vh;
+  background-color: var(--canela);
+}
+header nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .material-icons-outlined {
+  margin: 0 20px;
+  padding: auto;
+}
+main {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100vw;
+  height: 90vh;
+}
+.player-music-cover {
+  height: 52vh;
+  background-color: var(--canela);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cover2 {
+  width: 70%;
+  background-color: var(--canela);
+  aspect-ratio: 1 / 1;
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+}
+.cover2 {
+  background-image: url("https://lastfm.freetls.fastly.net/i/u/300x300/32061f0904363502f73b77be7bb74eaf.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.player-music-info {
+  font-family: "Merriweather Sans", sans-serif;
+  height: 12vh;
+  color: var(--marron);
+  background-color: var(--canela);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+}
+.player-music-info p:nth-child(1) {
+  font-weight: 700;
+}
+.player-music-info p:nth-child(2) {
+  font-weight: 300;
+}
+.player-music-time {
+  height: 12vh;
+  background-color: var(--canela);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Merriweather Sans", sans-serif;
+  color: var(--marron);
+  font-weight: 300;
+}
+
+.player-music-time .ball-time {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: var(--marron);
+}
+.player-music-time .line-time {
+  height: 1px;
+  width: 50%;
+  background-color: var(--marron);
+}
+.player-music-time .real-time {
+  margin-right: 10px;
+}
+.player-music-time .finish-time {
+  margin-left: 10px;
+}
+.player-music-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 16vh;
+  background-color: var(--canela);
+}
+.player-music-controls span{
+  display: block;
+  font-size: 48px;
+  height: 56px;
+  width: 56px;
+  line-height: 56px;
+  border-radius: 30px;
+}
+.player-music-controls .play-button span{
+  border: 2px solid var(--canela);
+  font-size: 56px;
+  height: 64px;
+  width: 64px;
+  line-height: 64px;
+}
+.player-music-controls .play-button span:hover{
+  border: 2px solid var(--marron);
+}
+.player-music-controls .play-button span:active{
+  border: 2px solid #fff;
+}
